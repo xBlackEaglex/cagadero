@@ -1,0 +1,30 @@
+:root {
+  --white: #fff; 
+  --black: #000;
+  --grey: gray;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headerPermanente {
+  margin-bottom: 25px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
