@@ -1,7 +1,15 @@
 .container {
     font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container button {
-    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.container p {
+    margin-top: 3.5rem;
 }

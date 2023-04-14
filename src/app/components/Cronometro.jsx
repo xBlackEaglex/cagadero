@@ -81,10 +81,15 @@ const Cronometro = () => {
                 {horas < 10 ? "0" + horas : horas}:{minutos < 10 ? "0" + minutos : minutos}:
                 {segundos < 10 ? "0" + segundos : segundos}
             </p>
-            {inicio ? <button onClick={handlePausa}>Inicio</button> : <button onClick={handlePausa}>{pausado ? "Reanudar" : "Pausar"}</button>}
-            {pausado && !inicio ? <button onClick={handleParar}>Reiniciar</button> : null}
-            {tiempoGuardado && <p>Tiempo guardado: {tiempoGuardado}</p>}
+            <div>
+                {inicio ? <button onClick={handlePausa}>Inicio</button> : <button onClick={handlePausa}>{pausado ? "Reanudar" : "Pausar"}</button>}
+                {pausado && !inicio ? <button onClick={handleParar}>Reiniciar</button> : null}
+                {tiempoGuardado && <p>Tiempo guardado: {tiempoGuardado}</p>}
+            </div>
             {consola()}
+            <p>cuando se llama el handle del button el setPausa cambia el estado de pausado
+                hasta que sale de la función del handle
+            </p>
         </div>
     );
 };
