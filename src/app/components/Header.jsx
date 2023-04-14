@@ -10,6 +10,9 @@ const Header = () => {
                 <li>
                     <Link href={'/statesAndProps'}>State and Props</Link>
                 </li>
+                <li>
+                    <Link href={'/cronometro'}>Cronometro</Link>
+                </li>
             </lu>
         </header>
     );

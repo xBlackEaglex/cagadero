@@ -5,6 +5,8 @@
 }
 
 * {
+  box-sizing: border-box;
+  font-size: 62.5%;
   padding: 0;
   margin: 0;
 }
@@ -19,7 +21,26 @@ body {
 }
 
 .headerPermanente {
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5);
+  width: 90%;
+}
+
+.headerPermanente lu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.headerPermanente li {
+  list-style: none;
+  font-size: 2.5rem;
+}
+
+.headerPermanente a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 main {
@@ -27,4 +48,10 @@ main {
   justify-content: center;
   align-items: center;
   max-width: 80%;
+}
+
+.description {
+  margin-top: 13rem;
+  font-size: 3rem;
+  text-align: center;
 }
