@@ -13,6 +13,9 @@ const Header = () => {
                 <li>
                     <Link href={'/cronometro'}>Cronometro</Link>
                 </li>
+                <li>
+                    <Link href={'/creadorDeComponentes'}>Creador de Componentes</Link>
+                </li>
             </lu>
         </header>
     );
